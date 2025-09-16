@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+</head>
+
+<body>
+    <h2>Creating an Image Map</h2>
+
+    <p>this is rectangle area image</p>
+    <img src="rect.jpg" alt="Laptop" usemap="#laptop">
+    <map name="laptop">
+        <area shape="rect" coords="1312,699,3872,2917" alt="Laptop" href="laptop.jpg">
+    </map>
+
+    <p>this is circle area image</p>
+    <img src="circle.jpg" alt="Coffee" usemap="#coffee">
+    <map name="coffee">
+        <area shape="circle" coords="1815,2506,525" alt="Cup of coffee" href="coffee.jpg">
+    </map>
+
+    <p>this is poly area image</p>
+    <img src="poly.jpg" alt="Mail" usemap="#mailmap">
+    <map name="mailmap">
+        <area shape="poly" coords="4713,3668,1494,3696,1614,3021,2278,3055,1625,1761,3998,994,5082,2413,3600,3049,4633,3055" alt="mail" href="mail.jpg">
+    </map>
+
+    <h2>Image Map with JavaScript</h2>
+    <img src="rect.jpg" alt="laptop" usemap="#laptop">
+    <map name="image-map">
+        <area shape="rect" coords="1312,699,3872,2917" onclick="alert('Rectangle clicked!');">
+    </map>
+</body>
+
+</html>

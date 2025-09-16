@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form with All Attributes</title>
+</head>
+
+<body>
+
+    <h2 style="text-align: center; color: darkblue;">HTML Form with Various Attributes</h2>
+
+    <form action="submit.php" method="post" target="_blank" autocomplete="on" novalidate enctype="multipart/form-data"
+        accept-charset="UTF-8" name="userForm"
+        style="border: 2px solid black; padding: 20px; width: 50%; margin: auto; background-color: #f9f9f9;">
+
+        <!-- Text Input -->
+        <label for="username" style="font-weight: bold;">Username:</label>
+        <input type="text" id="username" name="username" required
+            style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid black;"><br><br>
+
+        <!-- Password Input -->
+        <label for="password" style="font-weight: bold;">Password:</label>
+        <input type="password" id="password" name="password" required
+            style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid black;"><br><br>
+
+        <!-- File Upload -->
+        <label for="fileUpload" style="font-weight: bold;">Upload File:</label>
+        <input type="file" id="fileUpload" name="fileUpload" style="width: 100%; padding: 5px; margin: 5px 0;"><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit"
+            style="background-color: green; color: white; padding: 10px 15px; border: none; cursor: pointer;">
+            Submit
+        </button>
+    </form>
+
+</body>
+
+</html>

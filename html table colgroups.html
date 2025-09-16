@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table with Colgroups</title>
+</head>
+<body>
+
+    <h2>Table with Colgroups (Width, Visibility, Background, Border, Multiple Col Elements, Hidden Columns)</h2>
+
+    <table style="border-collapse: collapse; width: 100%; border: 2px solid black;">
+        
+        <!-- Colgroup with various properties -->
+        <colgroup>
+            <col style="width: 30%; background-color: lightblue; border: 2px solid blue;">
+            <col style="width: 20%; visibility: collapse;"> <!-- Hidden Column -->
+            <col style="width: 25%; background-color: lightgreen; border: 2px solid green;">
+            <col style="width: 25%; border: 2px solid red;"> 
+        </colgroup>
+
+        <thead>
+            <tr style="background-color: #ddd;">
+                <th style="border: 2px solid black; padding: 10px;">Column 1</th>
+                <th style="border: 2px solid black; padding: 10px;">Column 2 (Hidden)</th>
+                <th style="border: 2px solid black; padding: 10px;">Column 3</th>
+                <th style="border: 2px solid black; padding: 10px;">Column 4</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="border: 2px solid black; padding: 10px;">Data 1</td>
+                <td style="border: 2px solid black; padding: 10px;">Data 2</td>
+                <td style="border: 2px solid black; padding: 10px;">Data 3</td>
+                <td style="border: 2px solid black; padding: 10px;">Data 4</td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 10px;">Data 5</td>
+                <td style="border: 2px solid black; padding: 10px;">Data 6</td>
+                <td style="border: 2px solid black; padding: 10px;">Data 7</td>
+                <td style="border: 2px solid black; padding: 10px;">Data 8</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>

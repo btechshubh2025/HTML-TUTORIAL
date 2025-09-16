@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Headers Example</title>
+</head>
+<body>
+
+    <h2>Table with Vertical Headers, Aligned Headers, and Multiple Column Headers</h2>
+
+    <table style="border-collapse: collapse; width: 100%; text-align: center; border: 2px solid black;">
+        
+        <!-- Table Header with Multiple Column Headers -->
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th rowspan="3" style="border: 1px solid black; padding: 10px;">Category</th>
+                <th colspan="2" style="border: 1px solid black; padding: 10px;">Product Details</th>
+                <th style="border: 1px solid black; padding: 10px;">Stock</th>
+            </tr>
+            <tr style="background-color: #ddd;">
+                <th style="border: 1px solid black; padding: 10px;">Name</th>
+                <th style="border: 1px solid black; padding: 10px;">Price</th>
+                <th rowspan="2" style="border: 1px solid black; padding: 10px;">Availability</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body with Vertical Headers -->
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black; padding: 10px; background-color: #dff0d8;">Electronics</td>
+                <td style="border: 1px solid black; padding: 10px;">Laptop</td>
+                <td style="border: 1px solid black; padding: 10px;">$800</td>
+                <td style="border: 1px solid black; padding: 10px;">In Stock</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 10px; background-color: #dff0d8;">Furniture</td>
+                <td style="border: 1px solid black; padding: 10px;">Table</td>
+                <td style="border: 1px solid black; padding: 10px;">$150</td>
+                <td style="border: 1px solid black; padding: 10px;">Out of Stock</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>

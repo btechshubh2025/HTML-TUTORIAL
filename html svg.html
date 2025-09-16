@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Graphics Example</title>
+</head>
+
+<body style="font-family: Arial, sans-serif;">
+
+    <h2 style="text-align: center;">SVG Graphics Example</h2>
+
+    <table style="border-collapse: collapse; width: 100%; border: 2px solid black;">
+        <tr>
+            <th style="border: 2px solid black; padding: 10px; background-color: #f2f2f2;">Feature</th>
+            <th style="border: 2px solid black; padding: 10px; background-color: #f2f2f2;">SVG Output</th>
+        </tr>
+
+        <!-- SVG Circle -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>SVG Circle</h2>
+                A simple SVG circle with stroke and fill color.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <svg width="200" height="100" style="border:1px solid black;">
+                    <circle cx="100" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                </svg>
+            </td>
+        </tr>
+
+        <!-- SVG Rectangle -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>SVG Rectangle</h2>
+                A simple rectangle with a solid fill.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <svg width="200" height="100" style="border:1px solid black;">
+                    <rect x="20" y="20" width="160" height="60" fill="blue" />
+                </svg>
+            </td>
+        </tr>
+
+        <!-- SVG Rectangle with Opacity and Rounded Corners -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>SVG Rounded Rectangle</h2>
+                A rectangle with rounded corners and opacity.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <svg width="200" height="100" style="border:1px solid black;">
+                    <rect x="20" y="20" width="160" height="60" rx="15" ry="15" fill="green" opacity="0.5" />
+                </svg>
+            </td>
+        </tr>
+
+        <!-- SVG Star -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>SVG Star</h2>
+                A custom SVG star shape.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <svg width="200" height="200" style="border:1px solid black;">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198" fill="gold" stroke="black" stroke-width="2" />
+                </svg>
+            </td>
+        </tr>
+
+        <!-- SVG Gradient Ellipse and Text -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>SVG Gradient Ellipse & Text</h2>
+                An ellipse with a gradient fill and text.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <svg width="200" height="100" style="border:1px solid black;">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:blue; stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:green; stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="100" cy="50" rx="80" ry="30" fill="url(#grad1)" />
+                    <text x="50" y="55" font-size="20" fill="white">SVG Text</text>
+                </svg>
+            </td>
+        </tr>
+
+        <!-- Difference Between SVG and Canvas -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>Difference Between SVG and Canvas</h2>
+                Canvas uses pixel-based rendering while SVG is vector-based.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <ul>
+                    <li>SVG is resolution-independent (scalable without quality loss).</li>
+                    <li>Canvas is pixel-based (loses quality when resized).</li>
+                    <li>SVG elements can be styled using CSS and manipulated via the DOM.</li>
+                    <li>Canvas requires JavaScript for animations and interactions.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Comparison Table Between SVG and Canvas -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>SVG vs Canvas Comparison</h2>
+                A table comparing the two technologies.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <table style="border-collapse: collapse; width: 100%; border: 1px solid black;">
+                    <tr>
+                        <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Feature</th>
+                        <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">SVG</th>
+                        <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Canvas</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; padding: 5px;">Resolution</td>
+                        <td style="border: 1px solid black; padding: 5px;">Scalable</td>
+                        <td style="border: 1px solid black; padding: 5px;">Pixel-based</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; padding: 5px;">Performance</td>
+                        <td style="border: 1px solid black; padding: 5px;">Better for small images</td>
+                        <td style="border: 1px solid black; padding: 5px;">Better for large animations</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; padding: 5px;">Interactivity</td>
+                        <td style="border: 1px solid black; padding: 5px;">DOM elements (easier event handling)</td>
+                        <td style="border: 1px solid black; padding: 5px;">JavaScript needed for interactivity</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; padding: 5px;">Use Case</td>
+                        <td style="border: 1px solid black; padding: 5px;">Logos, Charts, Diagrams</td>
+                        <td style="border: 1px solid black; padding: 5px;">Game Graphics, Real-time Rendering</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

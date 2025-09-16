@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Responsive Text */
+        h2 {
+            font-size: 2vw;
+        }
+
+        /* Text scales with viewport */
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Relative text size */
+
+        /* Responsive Layout */
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Responsive Image */
+        .responsive-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            body {
+                background-color: #f8f8f8;
+            }
+
+            h2 {
+                font-size: 3vw;
+            }
+        }
+
+        /* Bootstrap Grid */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Setting the Viewport -->
+        <h2>Setting the Viewport</h2>
+        <p>The viewport meta tag allows the web page to scale based on screen size.</p>
+
+        <!-- Responsive Image -->
+        <h2>Responsive Image (Using width: 100%)</h2>
+        <img src="https://images.pexels.com/photos/3342739/pexels-photo-3342739.jpeg?auto=compress&cs=tinysrgb&w=600" class="responsive-img" alt="Responsive Image">
+
+        <!-- Show Different Images Based on Browser Width -->
+        <h2>Show Different Images Based on Browser Width</h2>
+        <picture>
+            <source srcset="https://images.pexels.com/photos/3342739/pexels-photo-3342739.jpeg?auto=compress&cs=tinysrgb&w=600" media="(max-width: 600px)">
+            <source srcset="https://media.istockphoto.com/id/1222344425/vector/abstract-technology-particle-background.jpg?s=612x612&w=0&k=20&c=4t0KKruDJcjfgEvjdz3I3NHidap6pIAE95lvezcfRTA=" media="(max-width: 1200px)">
+            <img src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=600" class="responsive-img" alt="Adaptive Image">
+        </picture>
+
+        <!-- Responsive Text Size -->
+        <h2>Responsive Text Size</h2>
+        <p style="font-size: 2vw;">This text scales with viewport width.</p>
+
+        <!-- Responsive Web Page with Media Queries -->
+        <h2>Responsive Web Page (Using Media Queries)</h2>
+        <div class="row">
+            <div class="col" style="background: lightblue;">Column 1</div>
+            <div class="col" style="background: lightgreen;">Column 2</div>
+        </div>
+
+        <!-- Bootstrap Responsive Grid -->
+        <h2>Bootstrap Responsive Framework</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="background: lightcoral;">Half Width on Desktop</div>
+                <div class="col-md-6" style="background: lightsalmon;">Half Width on Desktop</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

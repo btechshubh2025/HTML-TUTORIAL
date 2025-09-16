@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantics Elements Demo</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;">
+
+    <!-- Header Section -->
+    <header style="background: #222; color: white; padding: 15px; text-align: center;">
+        <h2>Website Header</h2>
+        <p>Logo | Navigation | Search</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav style="background: #333; color: white; padding: 10px; text-align: center;">
+        <h2>Navigation</h2>
+        <a href="#" style="color: white; margin: 0 15px;">Home</a>
+        <a href="#" style="color: white; margin: 0 15px;">About</a>
+        <a href="#" style="color: white; margin: 0 15px;">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding: 20px; background: #f4f4f4;">
+        <h2>Main Content</h2>
+        <p>This is the main area where the most important content of the page is placed.</p>
+
+        <!-- Section (Can Contain Articles) -->
+        <section style="border: 2px solid #ccc; padding: 15px; margin-bottom: 15px;">
+            <h2>Section: Latest News</h2>
+            <p>This section contains various news articles.</p>
+
+            <!-- Article Inside Section -->
+            <article style="border: 1px solid #aaa; padding: 10px; background: white; margin: 10px 0;">
+                <h2>Article: Tech Update</h2>
+                <p>The latest tech trends in 2025 include AI advancements and Web 3.0.</p>
+                <time datetime="2025-04-07">Published on April 7, 2025</time>
+            </article>
+        </section>
+
+        <!-- Article (Can Contain Section) -->
+        <article style="border: 2px solid #ccc; padding: 15px; background: white;">
+            <h2>Article: Blog Post</h2>
+            <p>This is a blog post about web development.</p>
+
+            <!-- Section Inside Article -->
+            <section style="border: 1px solid #aaa; padding: 10px; background: #f9f9f9;">
+                <h2>Sub-section: HTML Tips</h2>
+                <p>Learn how to use HTML semantics properly for better SEO and accessibility.</p>
+            </section>
+        </article>
+
+        <!-- Aside (Sidebar) -->
+        <aside style="border: 2px solid #555; padding: 15px; background: #ddd; margin-top: 15px;">
+            <h2>Sidebar</h2>
+            <p>Related Articles | Ads | Additional Links</p>
+        </aside>
+
+        <!-- Details and Summary -->
+        <details style="border: 2px solid #444; padding: 10px; background: #f8f8f8; margin-top: 15px;">
+            <summary style="cursor: pointer; font-weight: bold;">Click to reveal more details</summary>
+            <p>HTML5 introduced many new semantic elements that make the structure of a webpage clearer.</p>
+        </details>
+
+        <!-- Figure and Figcaption -->
+        <figure style="border: 2px solid #666; padding: 10px; text-align: center; margin-top: 15px;">
+            <img src="https://media.istockphoto.com/id/1222344425/vector/abstract-technology-particle-background.jpg?s=612x612&w=0&k=20&c=4t0KKruDJcjfgEvjdz3I3NHidap6pIAE95lvezcfRTA=" alt="Sample Image" style="width: 100%;">
+            <figcaption>Fig.1 - This is a placeholder image with a caption.</figcaption>
+        </figure>
+
+        <!-- Mark (Highlight Text) -->
+        <p style="margin-top: 15px;">This is an example of <mark style="background: yellow;">highlighted text</mark>
+            using the mark tag.</p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #222; color: white; padding: 15px; text-align: center; margin-top: 15px;">
+        <h2>Website Footer</h2>
+        <p>&copy; 2025 My Website | Contact | Sitemap | Back to Top</p>
+    </footer>
+
+</body>
+
+</html>

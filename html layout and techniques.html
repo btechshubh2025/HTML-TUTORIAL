@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Layout and Techniques</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+    <h2 style="text-align: center; background: #222; color: white; padding: 10px;">CSS Layout Element</h2>
+
+    <!-- Header Section -->
+    <header style="background: #333; color: white; text-align: center; padding: 20px;">
+        <h2>Header Section</h2>
+        <p>Website Title or Logo</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav style="background: #444; color: white; padding: 10px; text-align: center;">
+        <h2>Navigation</h2>
+        <a href="#" style="color: white; padding: 10px; text-decoration: none;">Home</a>
+        <a href="#" style="color: white; padding: 10px; text-decoration: none;">About</a>
+        <a href="#" style="color: white; padding: 10px; text-decoration: none;">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="display: flex; padding: 20px;">
+        <aside style="width: 25%; background: #f4f4f4; padding: 20px;">
+            <h2>Aside Section</h2>
+            <p>Additional Information</p>
+        </aside>
+
+        <section style="width: 50%; padding: 20px;">
+            <h2>Main Section</h2>
+            <article style="background: #ddd; padding: 10px; margin-bottom: 10px;">
+                <h2>Article 1</h2>
+                <p>Content of the first article.</p>
+            </article>
+            <article style="background: #ccc; padding: 10px;">
+                <h2>Article 2</h2>
+                <p>Content of the second article.</p>
+            </article>
+        </section>
+
+        <aside style="width: 25%; background: #f4f4f4; padding: 20px;">
+            <h2>Aside Section</h2>
+            <p>Related Links</p>
+        </aside>
+    </main>
+
+    <!-- Collapsible Details -->
+    <details style="margin: 20px; padding: 10px; background: #eee;">
+        <summary style="cursor: pointer; font-weight: bold;">More Info</summary>
+        <p>This is additional content revealed when clicking.</p>
+    </details>
+
+    <!-- Layout Techniques Section -->
+    <h2 style="text-align: center; background: #222; color: white; padding: 10px;">CSS Layout Techniques</h2>
+
+    <!-- Float Layout -->
+    <div style="overflow: hidden; background: lightgray; padding: 20px;">
+        <h2>Float Layout</h2>
+        <div style="float: left; width: 50%; background: #ddd; padding: 20px;">Left Column</div>
+        <div style="float: right; width: 50%; background: #bbb; padding: 20px;">Right Column</div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <!-- Flexbox Layout -->
+    <div style="display: flex; background: #eee; padding: 20px; margin-top: 10px;">
+        <h2 style="flex: 1; text-align: center;">Flexbox Layout</h2>
+        <div style="flex: 1; background: #ddd; padding: 20px; margin: 5px;">Box 1</div>
+        <div style="flex: 1; background: #bbb; padding: 20px; margin: 5px;">Box 2</div>
+        <div style="flex: 1; background: #999; padding: 20px; margin: 5px;">Box 3</div>
+    </div>
+
+    <!-- Grid Layout -->
+    <div
+        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; background: #f4f4f4; padding: 20px; margin-top: 10px;">
+        <h2 style="grid-column: span 3; text-align: center;">Grid Layout</h2>
+        <div style="background: #ddd; padding: 20px;">Grid Item 1</div>
+        <div style="background: #bbb; padding: 20px;">Grid Item 2</div>
+        <div style="background: #999; padding: 20px;">Grid Item 3</div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #222; color: white; text-align: center; padding: 10px; margin-top: 20px;">
+        <h2>Footer Section</h2>
+        <p>Copyright &copy; 2025</p>
+    </footer>
+
+</body>
+
+</html>

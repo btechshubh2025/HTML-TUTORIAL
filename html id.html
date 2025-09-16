@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML ID Example</title>
+</head>
+
+<body>
+
+    <h2>1. ID Attribute in HTML</h2>
+    <p id="uniquePara" style="color: blue; font-size: 18px; border: 2px solid black; padding: 10px;">This paragraph has
+        a unique ID.</p>
+
+    <h2>2. Difference Between Class and ID</h2>
+    <p id="idExample" style="color: red; border: 2px solid red; padding: 10px;">This is an ID example (unique).</p>
+    <p class="classExample" style="color: green; border: 2px solid green; padding: 10px;">This is a Class example (can
+        be multiple).</p>
+    <p class="classExample" style="color: green; border: 2px solid green; padding: 10px;">Another paragraph using the
+        same Class.</p>
+
+    <h2>3. Bookmarks with ID and Links</h2>
+    <a href="#section1" style="font-size: 18px; color: blue;">Go to Section 1</a> |
+    <a href="#section2" style="font-size: 18px; color: blue;">Go to Section 2</a>
+
+    <p style="height: 300px;"></p> <!-- Space for scrolling -->
+
+    <h3 id="section1" style="background-color: lightgray; padding: 20px; font-size: 22px; border: 3px solid black;">
+        Section 1</h3>
+    <p style="border: 2px solid black; padding: 15px; font-size: 18px; background-color: #f9f9f9;">This is Section 1
+        content. The size of this section has been increased for better visibility.</p>
+
+    <p style="height: 300px;"></p> <!-- Space for scrolling -->
+
+    <h3 id="section2" style="background-color: lightgray; padding: 20px; font-size: 22px; border: 3px solid black;">
+        Section 2</h3>
+    <p style="border: 2px solid black; padding: 15px; font-size: 18px; background-color: #f9f9f9;">This is Section 2
+        content. The size of this section has been increased for better visibility.</p>
+
+    <h2>4. Using ID Attribute in JavaScript</h2>
+    <button onclick="changeText()"
+        style="font-size: 16px; padding: 10px; background-color: yellow; border: 2px solid black;">Click to Change
+        Text</button>
+    <p id="jsPara" style="color: blue; font-size: 18px; border: 2px solid black; padding: 10px;">This text will change
+        using JavaScript.</p>
+
+    <script>
+        function changeText() {
+            document.getElementById("jsPara").innerHTML = "Text changed using JavaScript!";
+            document.getElementById("jsPara").style.color = "red";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Attributes Example</title>
+</head>
+
+<body>
+
+    <h2 style="color: blue; text-align: center;">Form Attributes Example</h2>
+
+    <form style="border: 2px solid black; padding: 20px; width: 50%; margin: auto; text-align: center;">
+
+        <label style="font-weight: bold;">Name:</label>
+        <input type="text" name="username" style="margin: 10px; padding: 5px; border: 1px solid black;"><br>
+
+        <label style="font-weight: bold;">Email:</label>
+        <input type="email" name="email" style="margin: 10px; padding: 5px; border: 1px solid black;"><br>
+
+        <label style="font-weight: bold;">Profile Picture:</label>
+        <input type="file" name="profile" style="margin: 10px; padding: 5px; border: 1px solid black;"><br>
+
+        <!-- Submit button with formaction -->
+        <button type="submit" formaction="submit_page.html"
+            style="background-color: green; color: white; padding: 10px; border: none; cursor: pointer;">
+            Submit (Form Action)
+        </button>
+
+        <!-- Submit button with formmethod -->
+        <button type="submit" formmethod="post"
+            style="background-color: blue; color: white; padding: 10px; border: none; cursor: pointer;">
+            Submit (POST Method)
+        </button>
+
+        <!-- Submit button with formenctype -->
+        <button type="submit" formenctype="multipart/form-data"
+            style="background-color: purple; color: white; padding: 10px; border: none; cursor: pointer;">
+            Submit (Form Enctype)
+        </button>
+
+        <!-- Submit button with formtarget -->
+        <button type="submit" formtarget="_blank"
+            style="background-color: orange; color: white; padding: 10px; border: none; cursor: pointer;">
+            Submit (New Tab)
+        </button>
+
+        <!-- Submit button with formnovalidate -->
+        <button type="submit" formnovalidate
+            style="background-color: red; color: white; padding: 10px; border: none; cursor: pointer;">
+            Submit (No Validation)
+        </button>
+
+    </form>
+
+</body>
+
+</html>

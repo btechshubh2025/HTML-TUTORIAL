@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title Element -->
+    <title>Complete HTML Head Example</title>
+
+    <!-- Meta Elements -->
+    <meta charset="UTF-8">
+    <meta name="description" content="A complete example of the HTML head section with all elements.">
+    <meta name="keywords" content="HTML, head, title, meta, style, link, script, base">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base Element -->
+    <base href="https://example.com/" target="_blank">
+
+    <!-- Inline Style Element -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            color: darkblue;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: darkgreen;
+        }
+
+        .styled-link {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Link Element (External CSS) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Script Element -->
+    <script>
+        function showAlert() {
+            alert("Hello! This is a script from the head section.");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Title Element</h2>
+    <p>The title of this document is displayed in the browser tab.</p>
+
+    <h2>Meta Elements</h2>
+    <p>Meta elements provide metadata about the page such as description, keywords, and viewport settings.</p>
+
+    <h2>Base Element</h2>
+    <p>The base URL is set to <a href="https://www.wikipedia.com/" class="styled-link">Wikipedia</a> and all links will open
+        in a new tab.</p>
+
+    <h2>Style Element</h2>
+    <p>Inline CSS is used to style this document.</p>
+
+    <h2>Link Element</h2>
+    <p>An external CSS file <strong>styles.css</strong> is linked but not visible here.</p>
+
+    <h2>Script Element</h2>
+    <button onclick="showAlert()">Click Me</button>
+
+</body>
+
+</html>

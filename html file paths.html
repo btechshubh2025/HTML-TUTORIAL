@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML File Paths</title>
+</head>
+
+<body>
+
+    <h2 style="color: blue;">Absolute File Path</h2>
+    <p style="font-size: 16px;">Absolute file paths specify the full URL or full location of a file.</p>
+    <a href="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="color: green; font-size: 18px;">Click to view an image
+        (Absolute Path)</a>
+    <br>
+    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Example Image"
+        style="border: 2px solid black; width: 300px; margin-top: 10px;">
+
+    <h2 style="color: blue;">Relative File Path</h2>
+    <p style="font-size: 16px;">Relative file paths specify the file location relative to the current document.</p>
+
+    <h3 style="color: darkred;">Same Folder</h3>
+    <img src="car.jpg" alt="Image in Same Folder" style="border: 2px solid black; width: 300px;">
+
+    <h3 style="color: darkred;">Subfolder</h3>
+    <img src="Images/supra.jpg" alt="Image in Subfolder" style="border: 2px solid black; width: 300px;">
+
+    <h3 style="color: darkred;">Parent Folder</h3>
+    <img src="../HTML TUTORIAL/Images/story/what's your story.jpg" alt="Image in Parent Folder" style="border: 2px solid black; width: 300px;">
+
+    <h3 style="color: darkred;">Root Directory</h3>
+    <img src="/HTML TUTORIAL/car.jpg" alt="Image in Root Directory" style="border: 2px solid black; width: 300px;">
+
+    <h3 style="color: darkred;">Relative File Path for Links</h3>
+    <a href="car.jpg" style="color: green; font-size: 18px;">Go to Car Image (Same Folder)</a>
+    <br>
+    <a href="Images/supra.jpg" style="color: green; font-size: 18px;">Go to Car Image (Subfolder)</a>
+    <br>
+    <a href="../HTML TUTORIAL/Images/story/what's your story.jpg" style="color: green; font-size: 18px;">Go to Image (Parent Folder)</a>
+
+</body>
+</html>

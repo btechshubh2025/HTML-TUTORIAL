@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Example</title>
+</head>
+
+<body>
+
+    <h2 style="color: darkblue; text-align: center;">User Registration Form</h2>
+
+    <form action="#" method="post"
+        style="border: 2px solid black; padding: 20px; width: 50%; margin: auto; background-color: #f9f9f9;">
+
+        <!-- Text Field -->
+        <label for="name" style="font-weight: bold;">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"
+            style="display: block; width: 95%; padding: 8px; margin-bottom: 10px; border: 1px solid black;">
+
+        <!-- Radio Buttons -->
+        <h2 style="color: darkblue;">Select Gender</h2>
+        <input type="radio" id="male" name="gender" value="male" style="margin-right: 5px;">
+        <label for="male" style="margin-right: 20px;">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" style="margin-right: 5px;">
+        <label for="female" style="margin-right: 20px;">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other" style="margin-right: 5px;">
+        <label for="other">Other</label>
+
+        <!-- Checkboxes -->
+        <h2 style="color: darkblue;">Select Your Interests</h2>
+        <input type="checkbox" id="coding" name="interest" value="coding" style="margin-right: 5px;">
+        <label for="coding" style="margin-right: 20px;">Coding</label>
+
+        <input type="checkbox" id="music" name="interest" value="music" style="margin-right: 5px;">
+        <label for="music" style="margin-right: 20px;">Music</label>
+
+        <input type="checkbox" id="sports" name="interest" value="sports" style="margin-right: 5px;">
+        <label for="sports">Sports</label>
+
+        <!-- Submit Button -->
+        <br><br>
+        <input type="submit" value="Register"
+            style="background-color: darkblue; color: white; padding: 10px 20px; border: none; cursor: pointer; font-weight: bold;">
+
+        <!-- Button -->
+        <input type="button" value="Click Me"
+            style="background-color: green; color: white; padding: 10px 20px; border: none; cursor: pointer; font-weight: bold; margin-left: 10px;">
+
+    </form>
+
+</body>
+
+</html>

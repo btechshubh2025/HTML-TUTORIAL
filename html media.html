@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia in HTML</title>
+</head>
+
+<body>
+    <h1>What is Multimedia?</h1>
+    <p>
+        Multimedia refers to content that uses a combination of different content forms such as text, audio, images,
+        animations, video, and interactive content.
+        In web development, multimedia elements like audio and video can be embedded directly into web pages using
+        HTML5.
+    </p>
+
+    <h2>Browser Support</h2>
+    <p>
+        Modern browsers like Chrome, Firefox, Edge, Safari, and Opera support multimedia through the
+        <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags.
+        Compatibility can vary depending on the file format and codec used.
+    </p>
+
+    <h2>Common Video Formats</h2>
+    <ul>
+        <li><strong>MP4 (MPEG-4)</strong> — Most commonly supported video format for web. Great compression and quality
+            balance.</li>
+        <li><strong>WebM</strong> — Open, royalty-free media format designed for the web.</li>
+        <li><strong>Ogg (OGV)</strong> — Open format, mostly supported in Firefox and Chrome.</li>
+    </ul>
+
+    <h3>Example: Embedding a Video</h3>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Common Audio Formats</h2>
+    <ul>
+        <li><strong>MP3</strong> — Most widely supported audio format across all browsers.</li>
+        <li><strong>WAV</strong> — Uncompressed audio format; large file size but great quality.</li>
+        <li><strong>Ogg (OGG)</strong> — Open format; good for web streaming.</li>
+    </ul>
+
+    <h3>Example: Embedding Audio</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+
+</html>

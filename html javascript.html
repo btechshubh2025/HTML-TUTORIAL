@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & JavaScript Demo</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+
+    <h2>1. HTML Script Tag</h2>
+    <p style="font-size: 18px;">Click the button to see an alert message.</p>
+    <button onclick="showMessage()"
+        style="padding: 10px 20px; font-size: 16px; background-color: green; color: white; border: none; cursor: pointer;">
+        Click Me
+    </button>
+
+    <h2>2. Taste of JavaScript</h2>
+    <p id="js-demo" style="font-size: 18px;">JavaScript will change this text.</p>
+    <button onclick="changeText()"
+        style="padding: 10px 20px; font-size: 16px; background-color: orange; color: white; border: none; cursor: pointer;">
+        Change Text
+    </button>
+
+    <h2>3. NoScript</h2>
+    <noscript>
+        <p style="color: red; font-size: 18px;">JavaScript is disabled in your browser. Please enable it for the best
+            experience.</p>
+    </noscript>
+
+    <!-- JavaScript Code -->
+    <script>
+        function showMessage() {
+            alert("Hello! This is an alert box triggered by JavaScript.");
+        }
+
+        function changeText() {
+            document.getElementById("js-demo").innerHTML = "JavaScript changed this text!";
+            document.getElementById("js-demo").style.color = "red";
+        }
+    </script>
+
+</body>
+
+</html>

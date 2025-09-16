@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+    <h2 style="color: darkblue;">HTML Form Elements</h2>
+
+    <form style="border: 2px solid black; padding: 20px; width: 50%; background-color: #f9f9f9;">
+
+        <!-- Fieldset with Legend -->
+        <fieldset style="border: 2px solid gray; padding: 15px;">
+            <legend style="font-weight: bold; color: darkgreen;">User Information</legend>
+
+            <!-- Label & Input -->
+            <label for="name" style="font-weight: bold;">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"
+                style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid black;"><br>
+
+            <!-- Select & Option -->
+            <label for="gender" style="font-weight: bold;">Gender:</label>
+            <select id="gender" name="gender"
+                style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid black;">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <!-- Optgroup -->
+            <label for="country" style="font-weight: bold;">Country:</label>
+            <select id="country" name="country"
+                style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid black;">
+                <optgroup label="Asia">
+                    <option value="india">India</option>
+                    <option value="japan">Japan</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                </optgroup>
+            </select><br>
+
+            <!-- Textarea -->
+            <label for="comments" style="font-weight: bold;">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"
+                style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid black;"></textarea><br>
+
+            <!-- Datalist -->
+            <label for="browser" style="font-weight: bold;">Favorite Browser:</label>
+            <input list="browsers" id="browser" name="browser"
+                style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid black;">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Edge">
+                <option value="Safari">
+            </datalist><br>
+
+            <!-- Output -->
+            <label for="range" style="font-weight: bold;">Range (1-100):</label>
+            <input type="range" id="range" name="range" min="1" max="100" oninput="result.value = range.value"
+                style="width: 80%;">
+            <output id="result">50</output><br>
+
+            <!-- Button -->
+            <button type="submit"
+                style="background-color: darkblue; color: white; padding: 10px; border: none; width: 100%; margin-top: 10px; cursor: pointer;">
+                Submit
+            </button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

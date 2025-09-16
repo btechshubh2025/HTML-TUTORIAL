@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Canvas Graphics</title>
+</head>
+
+<body style="font-family: Arial, sans-serif;">
+
+    <h2 style="text-align: center;">HTML Canvas Graphics Example</h2>
+
+    <table style="border-collapse: collapse; width: 100%; border: 2px solid black;">
+        <tr>
+            <th style="border: 2px solid black; padding: 10px;">Feature</th>
+            <th style="border: 2px solid black; padding: 10px;">Canvas Output</th>
+        </tr>
+
+        <!-- Basic Canvas -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>Basic Canvas</h2>
+                A simple canvas element.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <canvas id="basicCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+            </td>
+        </tr>
+
+        <!-- Draw Line -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>Draw a Line</h2>
+                Using <code>moveTo()</code> and <code>lineTo()</code>.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <canvas id="lineCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+            </td>
+        </tr>
+
+        <!-- Draw Circle -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>Draw a Circle</h2>
+                Using <code>arc()</code> function.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <canvas id="circleCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+            </td>
+        </tr>
+
+        <!-- Draw Text & Stroke Text -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>Draw Text & Stroke Text</h2>
+                Using <code>fillText()</code> and <code>strokeText()</code>.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <canvas id="textCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+            </td>
+        </tr>
+
+        <!-- Draw Linear Gradient -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>Linear Gradient</h2>
+                Using <code>createLinearGradient()</code>.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <canvas id="linearGradientCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+            </td>
+        </tr>
+
+        <!-- Draw Radial Gradient -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>Radial Gradient</h2>
+                Using <code>createRadialGradient()</code>.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <canvas id="radialGradientCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+            </td>
+        </tr>
+
+        <!-- Draw Image -->
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">
+                <h2>Draw Image</h2>
+                Using <code>drawImage()</code>.
+            </td>
+            <td style="border: 1px solid black; padding: 10px;">
+                <canvas id="imageCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // Draw Line
+        var lineCanvas = document.getElementById("lineCanvas").getContext("2d");
+        lineCanvas.moveTo(20, 20);
+        lineCanvas.lineTo(180, 80);
+        lineCanvas.stroke();
+
+        // Draw Circle
+        var circleCanvas = document.getElementById("circleCanvas").getContext("2d");
+        circleCanvas.beginPath();
+        circleCanvas.arc(100, 50, 40, 0, 2 * Math.PI);
+        circleCanvas.stroke();
+
+        // Draw Text & Stroke Text
+        var textCanvas = document.getElementById("textCanvas").getContext("2d");
+        textCanvas.font = "20px Arial";
+        textCanvas.fillText("Hello!", 50, 40);
+        textCanvas.strokeText("World!", 50, 70);
+
+        // Linear Gradient
+        var linearCanvas = document.getElementById("linearGradientCanvas").getContext("2d");
+        var linearGradient = linearCanvas.createLinearGradient(0, 0, 200, 0);
+        linearGradient.addColorStop(0, "red");
+        linearGradient.addColorStop(1, "blue");
+        linearCanvas.fillStyle = linearGradient;
+        linearCanvas.fillRect(10, 10, 180, 80);
+
+        // Radial Gradient
+        var radialCanvas = document.getElementById("radialGradientCanvas").getContext("2d");
+        var radialGradient = radialCanvas.createRadialGradient(100, 50, 10, 100, 50, 50);
+        radialGradient.addColorStop(0, "yellow");
+        radialGradient.addColorStop(1, "green");
+        radialCanvas.fillStyle = radialGradient;
+        radialCanvas.fillRect(10, 10, 180, 80);
+
+        // Draw Image
+        var imgCanvas = document.getElementById("imageCanvas").getContext("2d");
+        var img = new Image();
+        img.src = "https://via.placeholder.com/200"; // Placeholder image
+        img.onload = function () {
+            imgCanvas.drawImage(img, 0, 0, 200, 100);
+        };
+    </script>
+
+</body>
+
+</html>

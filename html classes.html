@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Class Attribute</title>
+    <script>
+        function changeTextColor() {
+            let elements = document.getElementsByClassName("highlight");
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.color = "blue";
+            }
+        }
+
+        function hideElements() {
+            let elements = document.getElementsByClassName("highlight");
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+    <h2 style="padding: 10px;">What is Class in HTML?</h2>
+    <p style="border: 1px solid black; padding: 10px; background-color: lightblue;">The <b>class</b> attribute allows us
+        to apply the same style to multiple elements.</p>
+
+    <h2 style="padding: 10px;">Syntax for Class</h2>
+    <p class="example" style="border: 1px solid black; padding: 10px; background-color: lightgreen;">To define a class,
+        use the <b>class</b> attribute inside an HTML element.</p>
+    <p class="example" style="border: 1px solid black; padding: 10px; background-color: lightgreen;">Example: &lt;p
+        class="classname"&gt; Text Content &lt;/p&gt;</p>
+
+    <h2 style="padding: 10px;">Multiple Classes in One Element</h2>
+    <p style="border: 1px solid black; padding: 10px; background-color: lightcoral;">An element can have multiple
+        classes separated by space.</p>
+
+    <p class="power main" style="background-color: teal; color: white; padding: 10px;">Web Development</p>
+    <p class="power" style="background-color: teal; color: white; padding: 10px;">Graphic Designing</p>
+    <p class="power" style="background-color: teal; color: white; padding: 10px;">Cyber Security</p>
+
+    <h2 style="padding: 10px;">Same Class Used in Different Elements</h2>
+    <p style="border: 1px solid black; padding: 10px; background-color: lightgray;">Different elements can use the same
+        class for consistent styling.</p>
+
+    <p class="info" style="background-color: darkblue; color: white; padding: 10px;">Artificial Intelligence</p>
+    <p class="info" style="background-color: darkblue; color: white; padding: 10px;">AI is revolutionizing the world
+        with automation.</p>
+
+    <h2 style="padding: 10px;">Using Class in JavaScript</h2>
+    <p class="highlight" style="border: 1px solid black; padding: 10px; background-color: lightpink;">Click the buttons
+        below to change text color or hide elements.</p>
+    <p class="highlight" style="border: 1px solid black; padding: 10px; background-color: lightpink;"> This text will
+        change color when you click the button.</p>
+
+    <button onclick="changeTextColor()"
+        style="padding: 10px; margin-top: 10px; border: none; background-color: orange; cursor: pointer;">Change Text
+        Color</button>
+    <button onclick="hideElements()"
+        style="padding: 10px; margin-top: 10px; border: none; background-color: red; color: white; cursor: pointer;">Hide
+        Elements</button>
+
+</body>
+
+</html>

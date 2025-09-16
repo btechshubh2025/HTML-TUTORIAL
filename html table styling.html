@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Styled Tables</title>
+</head>
+
+<body>
+    <h3>Zebra Stripes (Horizontal)</h3>
+    <table style="border-collapse: collapse; width: 100%;">
+        <tr>
+            <th style="text-align: left; padding: 8px;">Header 1</th>
+            <th style="text-align: left; padding: 8px;">Header 2</th>
+            <th style="text-align: left; padding: 8px;">Header 3</th>
+        </tr>
+        <tr style="background-color: #D6EEEE;">
+            <td style="padding: 8px;">Data 1</td>
+            <td style="padding: 8px;">Data 2</td>
+            <td style="padding: 8px;">Data 3</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Data 4</td>
+            <td style="padding: 8px;">Data 5</td>
+            <td style="padding: 8px;">Data 6</td>
+        </tr>
+    </table>
+
+    <h3>Zebra Stripes (Vertical)</h3>
+    <table style="border: 1px solid black; border-collapse: collapse; width: 100%;">
+        <tr>
+            <th style="padding: 8px;">Header 1</th>
+            <th style="padding: 8px; background-color: #D6EEEE;">Header 2</th>
+            <th style="padding: 8px;">Header 3</th>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Data 1</td>
+            <td style="padding: 8px; background-color: #D6EEEE;">Data 2</td>
+            <td style="padding: 8px;">Data 3</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Data 4</td>
+            <td style="padding: 8px; background-color: #D6EEEE;">Data 5</td>
+            <td style="padding: 8px;">Data 6</td>
+        </tr>
+    </table>
+
+    <h3>Combined Zebra Stripes (Horizontal + Vertical)</h3>
+    <table style="border: 1px solid black; border-collapse: collapse; width: 100%;">
+        <tr>
+            <th style="padding: 8px;">Header 1</th>
+            <th style="padding: 8px; background-color: rgba(150, 212, 212, 0.4);">Header 2</th>
+            <th style="padding: 8px;">Header 3</th>
+        </tr>
+        <tr style="background-color: rgba(150, 212, 212, 0.4);">
+            <td style="padding: 8px;">Data 1</td>
+            <td style="padding: 8px; background-color: rgba(150, 212, 212, 0.4);">Data 2</td>
+            <td style="padding: 8px;">Data 3</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Data 4</td>
+            <td style="padding: 8px; background-color: rgba(150, 212, 212, 0.4);">Data 5</td>
+            <td style="padding: 8px;">Data 6</td>
+        </tr>
+    </table>
+
+    <h3>Horizontal Dividers</h3>
+    <table style="border-collapse: collapse; width: 100%;">
+        <tr style="border-bottom: 1px solid #ddd;">
+            <th style="padding: 8px;">Header 1</th>
+            <th style="padding: 8px;">Header 2</th>
+            <th style="padding: 8px;">Header 3</th>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+            <td style="padding: 8px;">Data 1</td>
+            <td style="padding: 8px;">Data 2</td>
+            <td style="padding: 8px;">Data 3</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+            <td style="padding: 8px;">Data 4</td>
+            <td style="padding: 8px;">Data 5</td>
+            <td style="padding: 8px;">Data 6</td>
+        </tr>
+    </table>
+
+    <h3>Hoverable Table</h3>
+    <table style="border-collapse: collapse; width: 100%;">
+        <tr style="border-bottom: 1px solid #DDD;">
+            <th style="padding: 8px;">Header 1</th>
+            <th style="padding: 8px;">Header 2</th>
+            <th style="padding: 8px;">Header 3</th>
+        </tr>
+        <tr style="border-bottom: 1px solid #DDD;" onmouseover="this.style.backgroundColor='#D6EEEE';"
+            onmouseout="this.style.backgroundColor='';">
+            <td style="padding: 8px;">Data 1</td>
+            <td style="padding: 8px;">Data 2</td>
+            <td style="padding: 8px;">Data 3</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #DDD;" onmouseover="this.style.backgroundColor='#D6EEEE';"
+            onmouseout="this.style.backgroundColor='';">
+            <td style="padding: 8px;">Data 4</td>
+            <td style="padding: 8px;">Data 5</td>
+            <td style="padding: 8px;">Data 6</td>
+        </tr>
+    </table>
+</body>
+
+</html>

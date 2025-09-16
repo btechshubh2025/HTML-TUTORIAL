@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Div Elements</title>
+</head>
+<body>
+    <h2>What is a Div Element?</h2>
+    <p>The div (division) element is a block-level container used to group elements for styling and layout purposes.</p>
+
+    <h2>Div as a Container</h2>
+    <div style="border: 2px solid black; padding: 20px; margin: 10px;">
+        <h2 style="text-align: center;">Div as a Container</h2>
+        <p>This div acts as a container holding text and other elements.</p>
+    </div>
+
+    <h2>Center Align a Div</h2>
+    <div style="border: 2px solid blue; width: 50%; margin: 20px auto; padding: 20px; text-align: center;">
+        <h2>Centered Div</h2>
+        <p>This div is centered using margin: auto.</p>
+    </div>
+
+    <h2>Multiple Div Elements</h2>
+    <div style="border: 2px solid red; padding: 10px; margin: 10px;">Div 1</div>
+    <div style="border: 2px solid green; padding: 10px; margin: 10px;">Div 2</div>
+    <div style="border: 2px solid orange; padding: 10px; margin: 10px;">Div 3</div>
+
+    <h2>Aligning Div Elements Side by Side</h2>
+
+    <h3>Float Method</h3>
+    <div style="float: left; width: 30%; border: 2px solid purple; padding: 10px; margin: 5px;">Float Left</div>
+    <div style="float: left; width: 30%; border: 2px solid purple; padding: 10px; margin: 5px;">Float Left</div>
+    <div style="clear: both;"></div> <!-- Clear float -->
+
+    <h3>Inline-Block Method</h3>
+    <div style="display: inline-block; width: 30%; border: 2px solid brown; padding: 10px; margin: 5px;">Inline-Block</div>
+    <div style="display: inline-block; width: 30%; border: 2px solid brown; padding: 10px; margin: 5px;">Inline-Block</div>
+
+    <h3>Flexbox Method</h3>
+    <div style="display: flex; justify-content: space-around; border: 2px solid gray; padding: 10px;">
+        <div style="border: 2px solid blue; padding: 10px;">Flex Item 1</div>
+        <div style="border: 2px solid blue; padding: 10px;">Flex Item 2</div>
+        <div style="border: 2px solid blue; padding: 10px;">Flex Item 3</div>
+    </div>
+
+    <h3>Grid Method</h3>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; border: 2px solid black; padding: 10px;">
+        <div style="border: 2px solid pink; padding: 10px;">Grid Item 1</div>
+        <div style="border: 2px solid pink; padding: 10px;">Grid Item 2</div>
+        <div style="border: 2px solid pink; padding: 10px;">Grid Item 3</div>
+    </div>
+
+</body>
+</html>
