@@ -1,0 +1,15 @@
+h1 {
+    color: blue; /* Text color */
+    background-color: yellow; /* Background color */
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    border: 3px solid blue;
+    padding: 30px;
+    margin: 40px;
+}

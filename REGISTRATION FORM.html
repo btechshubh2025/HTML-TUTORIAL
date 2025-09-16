@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Form Example</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form action="/submit" method="post">
+    
+    <!-- Text Field -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <!-- Fieldset with Legend -->
+    <fieldset>
+      <legend>Gender</legend>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </fieldset><br>
+
+    <!-- Checkboxes -->
+    <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+    <label><input type="checkbox" name="hobby" value="music"> Music</label><br><br>
+
+    <!-- Select & Option -->
+    <label for="country">Country:</label>
+    <select name="country" id="country">
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+
+    <!-- Optgroup -->
+    <label for="city">City:</label>
+    <select name="city" id="city">
+      <optgroup label="India">
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+      </optgroup>
+      <optgroup label="USA">
+        <option value="ny">New York</option>
+        <option value="la">Los Angeles</option>
+      </optgroup>
+    </select><br><br>
+
+    <!-- Datalist -->
+    <label for="browser">Choose your browser:</label>
+    <input list="browsers" id="browser" name="browser">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Edge">
+      <option value="Safari">
+    </datalist><br><br>
+
+    <!-- Textarea -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+    <!-- File Upload -->
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file"><br><br>
+
+    <!-- Output -->
+    <label for="range">Select a number (0–100):</label>
+    <input type="range" id="range" name="range" min="0" max="100" oninput="result.value = range.value">
+    <output name="result" id="result">50</output><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Form">
+
+  </form>
+</body>
+</html>
